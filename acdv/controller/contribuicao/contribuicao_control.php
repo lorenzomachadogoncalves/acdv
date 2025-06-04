@@ -1,0 +1,21 @@
+<?php
+    include "../../model/contribuicao/contribuicao_model.php";
+
+    $opcao = $_POST["opcao"];
+    switch ($opcao) {
+        case "cadastrar":
+            cadastrar_contribuicao($_POST["id_associado"], $_POST["data_pagamento"], $_POST["valor"], $_POST["metodo_pagamento"]);
+            header("Location: ../view/");
+            break;
+
+        case "editar":
+            editar_contribuicao($_POST["id_associado"], $_POST["data_pagamento"], $_POST["valor"], $_POST["metodo_pagamento"], $_POST["id_contribuicao"]);
+            header("Location: ../view/");
+            break;
+
+        case "excluir":
+            excluir_contribuicao($_POST["id_contribuicao"]);
+            header("Location: ../view/");
+            break;
+    }
+?>

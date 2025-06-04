@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="../../controller/participante/participante_control.php">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="ocupacao">Ocupação</label>
+        <input type="text" name="ocupacao" id="ocupacao">
+        <span>&plus;</span>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone">
+
+        <label for="ativo">Está ativo?</label>
+        <select name="ativo" id="ativo">
+            <option value="1">Sim</option>
+            <option value="0">Não</option>
+        </select>
+
+        <label for="associado">É associado?</label>
+        <select name="associado" id="associado">
+            <option value="1">Sim</option>
+            <option value="0">Não</option>
+        </select>
+
+        <button type="submit" name="opcao" value="cadastrar">Cadastrar</button>
+    </form>
+</body>
+</html>
