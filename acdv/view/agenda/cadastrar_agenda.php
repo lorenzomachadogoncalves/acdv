@@ -10,10 +10,10 @@
         <label for="dia_semana">Dia da semana</label>
         <select name="dia_semana" id="dia_semana">
             <option value="segunda">Segunda</option>
-            <option value="segunda">Terça</option>
-            <option value="segunda">Quarta</option>
-            <option value="segunda">Quinta</option>
-            <option value="segunda">Sexta</option>
+            <option value="terca">Terça</option>
+            <option value="quarta">Quarta</option>
+            <option value="quinta">Quinta</option>
+            <option value="sexta">Sexta</option>
         </select>
 
         <label for="professor">Professor</label>

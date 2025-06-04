@@ -8,7 +8,7 @@
 <body>
     <?php
         include "../../model/participante/participante_model.php";
-        $resultado = buscar_participante($_GET["id_participante"]);
+        $resultado = visualizar_participante($_GET["id_participante"]);
         foreach ($resultado as $infos);
     ?>
     <form method="post" action="../../controller/participante/participante_control.php">
@@ -33,6 +33,8 @@
             <option value="1" <?=$infos['is_associado'] == 1 ? 'selected' : ''?> >Sim</option>
             <option value="0" <?=$infos['is_associado'] == 0 ? 'selected' : ''?> >Não</option>
         </select>
+
+        <input type="hidden" name="id_participante" id="id_participante" value="<?=$infos["id"]?>">
 
         <button type="submit" name="opcao" value="editar">Editar</button>
     </form>

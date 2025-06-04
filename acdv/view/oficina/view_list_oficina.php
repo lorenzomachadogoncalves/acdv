@@ -19,18 +19,9 @@
             </tr>
         </thead>
         <tbody>
-            <?php
-                include "../../model/oficina/oficina_model.php";
-                $resultado = visualizar_todas_oficinas();
-                foreach ($resultado as $infos) {
-                    echo "
-                        <tr>
-                            <td>$infos[nome]</td>
-                            <td>$infos[descricao]</td>
-                        </tr>
-                        ";
-                }
-            ?>
+        <?php
+                include "../components/oficina/tabela_oficinas.php";
+        ?>
         </tbody>
     </table>
 </body>

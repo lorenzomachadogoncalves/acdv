@@ -60,7 +60,7 @@
             $sucesso = mysqli_stmt_execute($stmt);
 
             if(!$sucesso) {
-                error_log("Erro SQL: " . mysqli_stmt_error($stmt))
+                error_log("Erro SQL: " . mysqli_stmt_error($stmt));
             }
 
             mysqli_stmt_close($stmt);
@@ -87,7 +87,7 @@
         mysqli_stmt_bind_param($stmt, "i", $id_programacao);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        
+
         close();
     }
 ?>
